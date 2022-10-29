@@ -45,7 +45,7 @@ class UserManage extends Component {
           isOpen={this.state.isOpenModal}
           toggleFromParent={this.toggleUserModal}
         />
-        <div className="title text-center">Manage user with Dũng Trần</div>
+        <div className="title">Manage user with Dũng Trần</div>
         <div className="user-table mt-4 mx-1">
           <div className="mx-1">
             <button

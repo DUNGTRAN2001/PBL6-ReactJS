@@ -1,6 +1,6 @@
 export default {
   api: {
-    API_BASE_URL: "http://113.171.210.48:7149/",
+    API_BASE_URL: "http://14.174.210.86:7149/",
     ROUTER_BASE_NAME: null,
   },
   app: {
