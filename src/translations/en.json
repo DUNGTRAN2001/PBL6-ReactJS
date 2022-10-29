@@ -1,4 +1,27 @@
 {
+    "home-header": {
+        "time-gold": "Gold time",
+        "time-frame-sale": "Sale time frame",
+        "transport": "Transport",
+        "free-transport": "Free shipping",
+        "discount": "Discount",
+        "discount-code": "Special discount code",
+        "service": "Service",
+        "good-service": "Provide good service",
+        "support": "Support",
+        "login": "Login"
+
+    },
+    "banner": {
+        "shopping-bg": "SHOPPING PLATFORM ",
+        "online-shopping": "SHOP ONLINE WITHOUT PRICE",
+        "child1": "Pants",
+        "child2": "Shorts",
+        "child3": "Shirt",
+        "child4": "T-shirt",
+        "child5": "Skirt",
+        "child6": "Accessory"
+    },
     "common": {
         "add": "Add",
         "edit": "Edit",

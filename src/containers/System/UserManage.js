@@ -14,7 +14,7 @@ class UserManage extends Component {
 
   async componentDidMount() {
     let response = await getAllUser();
-    if (response && response.isSuccess === 1) {
+    if (response && response.isSuccess === true) {
       this.setState(
         {
           arrUser: response["Data"],

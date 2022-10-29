@@ -36,12 +36,12 @@ class Login extends Component {
     try {
       // gọi được thành công nhưng bị lỗi khác
       let data = await handleLoginApi(this.state.username, this.state.password);
-      if (data && data.isSuccess !== 1) {
+      if (data && data.isSuccess !== true) {
         this.setState({
           errMessage: "lỗi",
         });
       }
-      if (data && data.isSuccess === 1) {
+      if (data && data.isSuccess === true) {
         // todo
         this.props.userLoginSucces(data["Data"][0]);
         console.log("login success");
