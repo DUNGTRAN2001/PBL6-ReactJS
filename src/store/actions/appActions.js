@@ -1,5 +1,5 @@
 import actionTypes from "./actionTypes";
-
+import { getAllUser } from "../../services/userService";
 export const appStartUpComplete = () => ({
   type: actionTypes.APP_START_UP_COMPLETE,
 });

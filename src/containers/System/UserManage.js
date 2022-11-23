@@ -59,7 +59,7 @@ class UserManage extends Component {
             <tr>
               <th>First Name</th>
               <th>Last Name</th>
-              <th>Picture</th>
+              {/* <th>Picture</th> */}
               <th>PhoneNumber</th>
               <th>Address</th>
               <th>Sex</th>
@@ -71,9 +71,15 @@ class UserManage extends Component {
                   <tr>
                     <td>{item.FirstName}</td>
                     <td>{item.LastName}</td>
-                    <td>
-                      <img src={item.PictureURL} alt="" />
-                    </td>
+                    {/* <td>
+                      <img
+                        src={
+                          `http://14.174.210.86:7149/api/Image/GetAvatar/` +
+                          item.PictureURL
+                        }
+                        alt=""
+                      />
+                    </td> */}
                     <td>{item.PhoneNumber}</td>
                     <td>{item.Address}</td>
                     <td>{item.Sex ? "Nam" : "Nữ"}</td>

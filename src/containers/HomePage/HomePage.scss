@@ -37,13 +37,7 @@
  
  .section-share {
      font-family: 'Courier New', Courier, monospace;
-     &.section-pants {
-         background-color: #f5f5f5;
-     }
-     &.section-shirts {
-         background-color: #f5f5f5;
-     }
-     &.section-skirts {
+     &.section-products {
          background-color: #f5f5f5;
      }
      &.section-about {
@@ -62,23 +56,8 @@
                  width: 320px;
                  height: 300px;
                  cursor: pointer;
-                 &.section-pants-bg {
-                     background-image: url('../../assets/paints/quan-dai.jpg');
-                 }
-                 &.section-shirts-bg {
-                     background-image: url('../../assets/shirts/somi1.jpg');
-                 }
-                 &.section-tshirts-bg {
-                     background-image: url('../../assets/t-shirts/aothun1.jpg');
-                 }
-                 &.section-shorts-bg {
-                     background-image: url('../../assets/shorts/short1.jpg');
-                 }
-                 &.section-skirts-bg {
-                     background-image: url('../../assets/skirts/vay1.jpg');
-                 }
-                 &.section-accessory-bg {
-                     background-image: url('../../assets/phukien/vi1.jpg');
+                 &.bg-translucent {
+                     opacity: 0.5;
                  }
                  &.section-outstanding-bg {
                      background-image: url('../../assets/outstanding/banchay1.jpg');
@@ -94,8 +73,13 @@
                  font-weight: 600;
                  .title-image {
                      cursor: pointer;
+                     text-transform: uppercase;
                      &:hover {
-                         color: #49bce2
+                         color: rgb(100, 8, 81);
+                     }
+                     &.title-out-of-stock {
+                         color: red;
+                         text-decoration: line-through;
                      }
                  }
              }

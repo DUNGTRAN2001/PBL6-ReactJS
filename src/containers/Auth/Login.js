@@ -5,9 +5,7 @@ import { push } from "connected-react-router";
 // dùng cho redux
 import * as actions from "../../store/actions";
 import "./Login.scss";
-import { FormattedMessage } from "react-intl";
 import { handleLoginApi } from "../../services/userService";
-import { userLoginSucces } from "../../store/actions";
 class Login extends Component {
   constructor(props) {
     super(props);
@@ -43,10 +41,9 @@ class Login extends Component {
       }
       if (data && data.isSuccess === true) {
         // todo
-        this.props.userLoginSucces(data["Data"][0]);
+        this.props.userLoginSucces(data["Data"][1]);
         console.log("login success");
       }
-      console.log(data["Data"][0]);
     } catch (e) {
       console.log(e);
       // if (e.response) {

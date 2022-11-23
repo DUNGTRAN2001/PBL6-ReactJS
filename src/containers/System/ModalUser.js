@@ -12,8 +12,8 @@ class ModalUser extends Component {
     this.props.toggleFromParent();
   };
   render() {
-    console.log("check child props", this.props);
-    console.log("check child openmodal", this.props.isOpen);
+    // console.log("check child props", this.props);
+    // console.log("check child openmodal", this.props.isOpen);
     return (
       <Modal
         //isOpen thuộc tính có sẵn

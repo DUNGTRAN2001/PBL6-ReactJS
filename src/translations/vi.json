@@ -31,7 +31,24 @@
             "admin-product": "Sản phẩm",
             "manage-product": "Quản lý sản phẩm",
             "admin-cart": "Giỏ hàng",
-            "manage-cart": "Quản lý giỏ hàng"
+            "manage-cart": "Quản lý giỏ hàng",
+            "manage-category": "Quản lý thư mục"
         }
+    },
+    "manage-user": {
+        "add": "Thêm mới người dùng",
+        "email": "Email",
+        "password": "Mật khẩu",
+        "first-name": "Tên",
+        "last-name": "Họ",
+        "phone-number": "Số điện thoại",
+        "address": "Địa chỉ",
+        "gender": "Giới tính",
+        "position": "Chức danh",
+        "role-id": "Vai trò",
+        "image": "Ảnh",
+        "save": "Lưu người dùng",
+        "edit": "Lưu thay đổi"
+
     }
 }

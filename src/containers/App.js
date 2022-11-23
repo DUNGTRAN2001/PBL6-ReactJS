@@ -15,6 +15,11 @@ import System from "../routes/System";
 import { CustomToastCloseButton } from "../components/CustomToast";
 import HomePage from "./HomePage/HomePage.js";
 import CustomScrollbars from "../components/CustomScrollbars";
+import UserInfo from "./HomePage/User/UserInfo";
+import DetailProduct from "./HomePage/Section/Product/DetailProduct";
+import MoreProduct from "./HomePage/Section/Product/MoreProduct";
+import Cart from "./HomePage/Section/Cart/Cart";
+import Search from "./HomePage/Section/Search/Search";
 class App extends Component {
   handlePersistorState = () => {
     const { persistor } = this.props;
@@ -52,11 +57,16 @@ class App extends Component {
                     component={userIsAuthenticated(System)}
                   />
                   <Route path={path.HOMEPAGE} component={HomePage} />
+                  <Route path={path.INFOR_USER} component={UserInfo} />
+                  <Route path={path.DETAIL_PRODUCT} component={DetailProduct} />
+                  <Route path={path.MORE_PRODUCT} component={MoreProduct} />
+                  <Route path={path.CART} component={Cart} />
+                  <Route path={path.SEARCH} component={Search} />
                 </Switch>
               </CustomScrollbars>
             </div>
 
-            <ToastContainer
+            {/* <ToastContainer
               className="toast-container"
               toastClassName="toast-item"
               bodyClassName="toast-item-body"
@@ -67,6 +77,18 @@ class App extends Component {
               closeOnClick={false}
               draggable={false}
               closeButton={<CustomToastCloseButton />}
+            /> */}
+            <ToastContainer
+              position="top-right"
+              autoClose={3000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+              theme="colored"
             />
           </div>
         </Router>

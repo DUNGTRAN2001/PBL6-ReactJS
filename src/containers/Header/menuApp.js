@@ -25,6 +25,10 @@ export const adminMenu = [
         name: "menu.admin.manage-product",
         link: "/system/manage-product",
       },
+      {
+        name: "menu.admin.manage-category",
+        link: "/system/manage-category",
+      },
     ],
   },
   {
